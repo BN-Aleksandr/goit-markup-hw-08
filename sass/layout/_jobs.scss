@@ -1,0 +1,45 @@
+.jobs {
+  @extend %section;
+  padding-top: 0;
+}
+
+.jobs__list {
+  @include card-set($cardName: 'jobs__item');
+}
+
+.jobs__item {
+  position: relative;
+}
+
+.jobs__image {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.jobs__label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 70px;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.jobs__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--text-color-white);
+}

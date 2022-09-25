@@ -1,0 +1,34 @@
+// utils styles
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+// base styles
+@import './base/reset';
+@import './base/container';
+@import './base/base';
+
+//  layout styles
+@import './layout/header';
+@import './layout/nav';
+@import './layout/hero';
+@import './layout/benefits';
+@import './layout/jobs';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/portfolio';
+@import './layout/modal';
+
+// component styles
+@import './components/logo';
+@import './components/contacts';
+@import './components/button';
+@import './components/teammate-card';
+@import './components/address';
+@import './components/socials';
+@import './components/subscribe-form';
+@import './components/filters';
+@import './components/portfolio-list';
+@import './components/call-back-form';
+@import './components/backdrop';

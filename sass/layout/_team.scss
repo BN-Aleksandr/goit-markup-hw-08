@@ -1,0 +1,8 @@
+.team {
+  @extend %section;
+  background-color: var(--bg-color-gray);
+}
+
+.team__list {
+  @include card-set($items: 4, $cardName: 'teammate');
+}

@@ -1,0 +1,41 @@
+:root {
+  --text-color-black: #212121;
+  --text-color-full-black: #000000;
+  --text-color-white: #ffffff;
+  --text-color-gray: #757575;
+  --text-color-gray-alpfa: rgba(255, 255, 255, 0.6);
+  --text-placeholder-cl: rgba(117, 117, 117, 0.5);
+
+  --bg-color-black: #2f303a;
+  --bg-color-gray: #f5f4fa;
+  --bg-color-white: #ffffff;
+  --bg-hero-cl: #c4c4c4;
+  --bg-filter: rgba(47, 48, 58, 0.4);
+  --bg-overlay-cl: rgba(33, 150, 243, 0.9);
+  --bg-backdrop: rgba(0, 0, 0, 0.2);
+
+  --btn-shadow-cl: rgba(0, 0, 0, 0.15);
+
+  --card-bg-color: #ffffff;
+
+  --accent-color: #2196f3;
+  --button-hover-color: #188ce8;
+  --portfolio-button-bg-color: #f5f4fa;
+
+  --header-border-cl: #ececec;
+  --portfolio-border-cl: #eeeeee;
+
+  --social-link-cl: #afb1b8;
+  --social-link-hover-cl: #ffffff;
+  --bg-socials-cl: rgba(255, 255, 255, 0.1);
+  --client-link-cl: #afb1b8;
+  --footer-input-border-cl: rgba(255, 255, 255, 0.3);
+
+  --items: 3;
+  --indent: 30px;
+
+  --transition-parameters: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  --main-font-family: 'Roboto', sans-serif;
+  --additional-font-family: 'Raleway', sans-serif;
+}

@@ -1,0 +1,38 @@
+.benefits {
+  @extend %section;
+}
+
+.benefits__title {
+  @extend %visually-hidden;
+}
+
+.benefits__list {
+  @include card-set($items: 4, $cardName: 'benefit');
+}
+
+.benefit__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bg-color-gray);
+}
+
+.benefit__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.benefit__descr {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color-gray);
+}

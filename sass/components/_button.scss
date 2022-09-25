@@ -1,0 +1,55 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 10px 22px;
+  font-weight: 700;
+  font-size: inherit;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--text-color-white);
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color var(--transition-parameters);
+
+  &--bigger {
+    min-width: 216px;
+  }
+
+  &--smaller {
+    min-width: 200px;
+  }
+
+  &--with-shadow {
+    box-shadow: 0px 4px 4px var(--btn-shadow-cl);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-color);
+  }
+}
+
+.btn__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--with-icon::after {
+    margin-left: 10px;
+    display: block;
+    content: '';
+    width: 24px;
+    height: 24px;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z' fill='white'/%3E%3C/svg%3E%0A");
+  }
+}
+
+.hero__btn {
+  margin: 0 auto;
+}

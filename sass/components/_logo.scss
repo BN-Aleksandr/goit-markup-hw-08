@@ -1,0 +1,28 @@
+.logo {
+  @extend %link;
+
+  display: inline-block;
+  font-family: var(--additional-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+
+  color: var(--text-color-full-black);
+}
+
+.nav__logo {
+  margin-right: 93px;
+}
+
+.logo__substring {
+  color: var(--accent-color);
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.logo--reverse-color {
+  color: var(--text-color-white);
+}

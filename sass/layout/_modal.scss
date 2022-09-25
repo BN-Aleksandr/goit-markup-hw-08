@@ -1,0 +1,60 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  padding: 40px;
+
+  background-color: var(--bg-color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) perspective(900px) rotateY(0deg);
+  transition: transform var(--transition-parameters);
+
+  .is-hidden & {
+    transform: translate(-50%, -50%) perspective(900px) rotateY(90deg);
+  }
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: var(--text-color-full-black);
+  background: none;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: color var(--transition-parameters);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.modal__close-icon {
+  fill: currentColor;
+}
+
+.modal__title {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+
+  margin-bottom: 12px;
+
+  text-align: center;
+  line-height: calc(23 / 20);
+  letter-spacing: 0.03em;
+}

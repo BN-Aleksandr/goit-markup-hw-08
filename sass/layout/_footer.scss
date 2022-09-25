@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--bg-color-black);
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__adress-group {
+  margin-right: 70px;
+}
+
+.footer__socials-group {
+  width: 206px;
+}
+
+.footer__socials-text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  color: var(--text-color-white);
+  text-transform: uppercase;
+}
+
+.footer__subscribe-form {
+  margin-left: auto;
+}
