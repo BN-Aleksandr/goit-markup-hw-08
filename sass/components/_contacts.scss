@@ -1,4 +1,10 @@
 .contacts {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: column;
+  }
 }
 .contacs__item {
   font-weight: 500;
@@ -13,41 +19,57 @@
 
 .contacts__mail {
   @extend %link;
-  font-size: 34px;
-  line-height: 40px/34px;
-  color: var(--accent-color);
+  display: block;
+  font-size: 24px;
+  line-height: 28px/24px;
+  color: var(--text-color-gray);
 }
 
 .contacts__tel {
   @extend %link;
-  font-size: 24px;
-  line-height: 28px;
-  color: var(--text-color-gray);
+  display: block;
+  margin-bottom: 32px;
+
+  font-size: 34px;
+  line-height: 40px/34px;
+  color: var(--accent-color);
+
+  @media screen and (max-width: ($mobile-width - 0.5px)) {
+    font-size: 24px;
+  }
+}
+
+.contacts__icon {
+  display: none;
 }
 
 .contacts__socials-list {
   display: flex;
+  margin-left: -10px;
+  margin-top: 64px;
+
+  @media screen and (min-width: $tablet_width) {
+    display: none;
+  }
 }
 .contacts__solials-item {
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
 }
 
 .contacts__socials-link {
-  // outline: 1px solid red;
   @extend %link;
-  // display: inline-block;
-  // padding: 0 10px;
+  display: block;
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px/18px;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 
-  &:first-child {
-    padding-left: 0px;
-  }
-
-  &:not(:first-child) {
-    padding-left: 10px;
-    border-left: 2px solid black;
-  }
-
-  &:not(:last-child) {
-    // padding-right: 10px;
+  @media screen and (max-width: ($mobile-width - 0.5px)) {
+    font-size: 10px;
   }
 }
 

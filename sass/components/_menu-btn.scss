@@ -5,15 +5,26 @@
   width: 40px;
   height: 40px;
   padding: 0;
-  margin-left: auto;
 
   background-color: var(--bg-color-white);
   border: none;
   fill: currentColor;
+  cursor: pointer;
 
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.menu-open-btn {
+  margin-left: auto;
+
+  @media screen and (min-width: $tablet-width) {
   }
 }
 

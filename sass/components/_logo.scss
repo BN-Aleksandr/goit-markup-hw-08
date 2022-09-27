@@ -12,7 +12,13 @@
 }
 
 .nav__logo {
-  margin-right: 93px;
+  @media screen and (min-width: $tablet-width) {
+    margin-right: 87px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 93px;
+  }
 }
 
 .logo__substring {
