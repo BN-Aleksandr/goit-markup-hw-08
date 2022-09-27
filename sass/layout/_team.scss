@@ -4,5 +4,13 @@
 }
 
 .team__list {
-  @include card-set($items: 4, $cardName: 'teammate');
+  @include card-set('teammate', 1);
+
+  @media screen and (min-width: $tablet-width) {
+    @include card-set('teammate', 2);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    @include card-set('teammate', 4);
+  }
 }

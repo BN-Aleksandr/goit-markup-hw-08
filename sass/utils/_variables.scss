@@ -31,7 +31,7 @@
   --client-link-cl: #afb1b8;
   --footer-input-border-cl: rgba(255, 255, 255, 0.3);
 
-  --items: 3;
+  --items: 1;
   --indent: 30px;
 
   --transition-parameters: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -39,3 +39,8 @@
   --main-font-family: 'Roboto', sans-serif;
   --additional-font-family: 'Raleway', sans-serif;
 }
+
+// breakpoints width
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1200px;

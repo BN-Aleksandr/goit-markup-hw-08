@@ -1,6 +1,12 @@
 %section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  outline: 2px dotted green;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 %link {

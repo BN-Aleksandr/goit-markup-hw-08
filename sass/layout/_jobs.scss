@@ -1,10 +1,16 @@
 .jobs {
   @extend %section;
+
+  display: none;
   padding-top: 0;
+
+  @media screen and (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .jobs__list {
-  @include card-set($cardName: 'jobs__item');
+  @include card-set('jobs__item', 3);
 }
 
 .jobs__item {
@@ -37,7 +43,7 @@
 .jobs__text {
   font-weight: 700;
   font-size: 14px;
-  line-height: calc(16 / 14);
+  line-height: calc(16px / 14px);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 

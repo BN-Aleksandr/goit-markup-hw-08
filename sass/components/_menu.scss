@@ -1,14 +1,15 @@
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  background-color: var(--bg-color-white);
+  background-color: pink;
+  // background-color: var(--bg-color-white);
 
-  transform: translateX(100vw);
+  transform: translateX(100%);
   transition: transform var(--transition-parameters);
 
   &.is-open {

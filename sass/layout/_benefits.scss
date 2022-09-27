@@ -7,7 +7,14 @@
 }
 
 .benefits__list {
-  @include card-set($items: 4, $cardName: 'benefit');
+  @include card-set('benefit');
+
+  @media screen and (min-width: $tablet-width) {
+    @include card-set('benefit', 2);
+  }
+  @media screen and (min-width: $desktop-width) {
+    @include card-set('benefit', 4);
+  }
 }
 
 .benefit__wrapper {
@@ -25,14 +32,19 @@
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16px / 14px);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .benefit__descr {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: calc(24px / 14px);
   letter-spacing: 0.03em;
   color: var(--text-color-gray);
 }

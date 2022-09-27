@@ -3,7 +3,15 @@
 }
 
 .clients__list {
-  @include card-set($items: 6, $cardName: 'clients__item');
+  @include card-set('clients__item', 2);
+
+  @media screen and (min-width: $tablet-width) {
+    @include card-set('clients__item', 3);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    @include card-set('clients__item', 6);
+  }
 }
 
 .clients__link {

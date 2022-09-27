@@ -1,4 +1,4 @@
-@mixin card-set($indent: var(--indent), $items: var(--items), $cardName) {
+@mixin card-set($cardName, $items: var(--items), $indent: var(--indent)) {
   display: flex;
   flex-wrap: wrap;
   gap: $indent;
