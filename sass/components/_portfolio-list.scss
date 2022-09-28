@@ -1,7 +1,15 @@
 .portfolio-list {
-  @include card-set($cardName: 'portfolio-card');
+  @include card-set('portfolio-card');
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet-width) {
+    @include card-set('portfolio-card', 2);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    @include card-set('portfolio-card', 3);
+  }
 }
 
 .portfolio-card__wrapper {
@@ -73,12 +81,13 @@
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: 36px/18px;
   letter-spacing: 0.06em;
 }
 
 .portfolio-card__descr {
-  line-height: 1.86;
+  font-size: 16px;
+  line-height: 30px/16px;
   letter-spacing: 0.03em;
   color: var(--text-color-gray);
 }
