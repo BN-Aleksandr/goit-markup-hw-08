@@ -4,30 +4,37 @@
 
   @media screen and (min-width: $tablet-width) {
     flex-direction: column;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 30px;
   }
 }
+
 .contacs__item {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
-.contacts__item:first-child {
-  margin-bottom: 32px;
-}
-.contacs__items:last-child {
-  margin-bottom: 64px;
-}
 
 .contacts__mail {
   @extend %link;
-  display: block;
+  display: flex;
   font-size: 24px;
   line-height: 28px/24px;
   color: var(--text-color-gray);
+
+  @media screen and (min-width: $tablet-width) {
+    // display: flex;
+    font-size: 12px;
+    line-height: 14px/12px;
+  }
 }
 
 .contacts__tel {
   @extend %link;
-  display: block;
+  display: flex;
   margin-bottom: 32px;
 
   font-size: 34px;
@@ -37,10 +44,22 @@
   @media screen and (max-width: ($mobile-width - 0.5px)) {
     font-size: 24px;
   }
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 14px/12px;
+    color: var(--text-color-gray);
+  }
 }
 
 .contacts__icon {
   display: none;
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
 
 .contacts__socials-list {

@@ -32,7 +32,6 @@
 }
 
 .portfolio, .clients, .team, .jobs, .benefits {
-  outline: 2px dotted green;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -79,7 +78,6 @@ p {
 
 .container {
   position: relative;
-  outline: 2px dashed orangered;
   max-width: 480px;
   padding: 0;
   margin: 0 auto;
@@ -140,13 +138,15 @@ p {
   }
 }
 
-.nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .nav__item:not(:last-child) {
@@ -159,6 +159,7 @@ p {
 }
 
 .nav__link {
+  position: relative;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px/40px;
@@ -624,7 +625,7 @@ p {
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  background-color: pink;
+  background-color: var(--bg-color-white);
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform var(--transition-parameters);
@@ -640,6 +641,7 @@ p {
 @media screen and (min-width: 768px) {
   .menu {
     position: static;
+    padding: 0;
     width: 100%;
     height: auto;
     -webkit-transform: translateX(0);
@@ -648,7 +650,6 @@ p {
 }
 
 .menu__wrapper {
-  outline: 2px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,9 +671,12 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -727,6 +731,16 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
   }
 }
 
@@ -735,23 +749,25 @@ p {
   letter-spacing: 0.02em;
 }
 
-.contacts__item:first-child {
-  margin-bottom: 32px;
-}
-
-.contacs__items:last-child {
-  margin-bottom: 64px;
-}
-
 .contacts__mail {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 24px;
   line-height: 28px/24px;
   color: var(--text-color-gray);
 }
+@media screen and (min-width: 768px) {
+  .contacts__mail {
+    font-size: 12px;
+    line-height: 14px/12px;
+  }
+}
 
 .contacts__tel {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 32px;
   font-size: 34px;
   line-height: 40px/34px;
@@ -762,9 +778,24 @@ p {
     font-size: 24px;
   }
 }
+@media screen and (min-width: 768px) {
+  .contacts__tel {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 14px/12px;
+    color: var(--text-color-gray);
+  }
+}
 
 .contacts__icon {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts__icon {
+    display: block;
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
 
 .contacts__socials-list {
