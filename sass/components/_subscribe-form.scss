@@ -1,7 +1,7 @@
 .subscribe-form {
   width: 100%;
 
-  @media screen and (min-width) {
+  @media screen and (min-width: $desktop-width) {
     width: auto;
   }
 }
