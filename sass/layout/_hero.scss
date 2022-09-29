@@ -1,18 +1,57 @@
 .hero {
+  max-width: 1600px;
   padding: 118px 15px;
   margin: 0 auto;
   background-color: var(--bg-hero-cl);
-  background-image: linear-gradient(var(--bg-filter), var(--bg-filter)),
-    url('../images/main/bg-picture.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-  @media screen and (min-width: $desktop-width) {
-    max-width: 1600px;
-    padding: 200px 15px;
+  // <= 480px
+
+  background-image: linear-gradient(var(--bg-filter), var(--bg-filter)),
+    url('../images/main/hero/bg-img-mobile@1x.jpg');
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(var(--bg-filter), var(--bg-filter)),
+      url('../images/main/hero/bg-img-mobile@2x.jpg');
   }
 
-  //
-  // padding-top: 200px;
-  // padding-bottom: 200px;
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+    background-image: linear-gradient(var(--bg-filter), var(--bg-filter)),
+      url('../images/main/hero/bg-img-mobile@3x.jpg');
+  }
+
+  // >480 and <=678
+  @media screen and (min-width: ($mobile-width + 1px)) {
+    background-image: linear-gradient(var(--bg-filter), var(--bg-filter)),
+      url('../images/main/hero/bg-img-tablet@1x.jpg');
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(var(--bg-filter), var(--bg-filter)),
+      url('../images/main/hero/bg-img-tablet@2x.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288px), (min-resolution: 3dppx) {
+    background-image: linear-gradient(var(--bg-filter), var(--bg-filter)),
+      url('../images/main/hero/bg-img-tablet@3x.jpg');
+  }
+
+  // >768 and <=1600
+  @media screen and (min-width: ($tablet-width + 1px)) {
+    background-image: linear-gradient(var(--bg-filter), var(--bg-filter)),
+      url('../images/main/hero/bg-img-desktop@1x.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 196dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(var(--bg-filter), var(--bg-filter)),
+      url('../images/main/hero/bg-img-desktop@2x.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288px), (min-resolution: 3dppx) {
+    background-image: linear-gradient(var(--bg-filter), var(--bg-filter)),
+      url('../images/main/hero/bg-img-desktop@3x.jpg');
+  }
 }
 
 .hero__title {

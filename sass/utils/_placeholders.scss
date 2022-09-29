@@ -13,6 +13,12 @@
   text-decoration: none;
 }
 
+%image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 %visually-hidden {
   position: absolute;
   white-space: nowrap;
