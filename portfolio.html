@@ -113,8 +113,49 @@
                     <li class="portfolio-card">
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__thumb ">
-                                <img class="portfolio-card__image" src="./images/portfolio/portfolio-1.jpg"
-                                    alt="лептоп з картаками співробітників на екрані" width="370" height="294">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/main/team/teammate-1-desktop-270w.webp 270w,
+                                        ./images/main/team/teammate-1-desktop-540w.webp 540w, 
+                                        ./images/main/team/teammate-1-desktop-810w.webp 810w
+                                        " type="image/webp" sizes="270px" />
+
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/main/team/teammate-1-desktop-270w.jpg 270w,
+                                        ./images/main/team/teammate-1-desktop-540w.jpg 540w, 
+                                        ./images/main/team/teammate-1-desktop-810w.jpg 810w
+                                        " type="image/jpeg" sizes="270px" />
+
+                                    <!-- Tablet screen -->
+                                    <source media="(min-width: 678px)" srcset="
+                                        ./images/main/team/teammate-1-tablet-354w.webp 354w,
+                                        ./images/main/team/teammate-1-tablet-708w.webp 708w, 
+                                        ./images/main/team/teammate-1-tablet-1062w.webp 1062w
+                                        " type="image/webp" sizes="354px" />
+
+                                    <source media="(min-width: 678px)" srcset="
+                                        ./images/main/team/teammate-1-tablet-354w.jpg 354w,
+                                        ./images/main/team/teammate-1-tablet-708w.jpg 708w, 
+                                        ./images/main/team/teammate-1-tablet-1062w.jpg 1062w
+                                        " type="image/jpeg" sizes="354px" />
+
+                                    <!-- Mobile screen -->
+                                    <source media="(min-width: 480px)" srcset="
+                                        ./images/main/team/teammate-1-mobile-450w.webp 450w,
+                                        ./images/main/team/teammate-1-mobile-900w.webp 900w, 
+                                        ./images/main/team/teammate-1-mobile-1350w.webp 1350w
+                                        " type="image/webp" sizes="354px" />
+
+                                    <source media="(min-width: 480px)" srcset="
+                                        ./images/main/team/teammate-1-mobile-450w.jpg 450w,
+                                        ./images/main/team/teammate-1-mobile-900w.jpg 900w, 
+                                        ./images/main/team/teammate-1-mobile-1350w.jpg 1350w
+                                        " type="image/jpeg" sizes="354px" />
+
+                                    <img class="teammate__image" src="./images/portfolio/card-images/"
+                                        alt="фотографія працівника" width="450px" />
+                                </picture>
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__overlay-content">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем

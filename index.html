@@ -168,8 +168,20 @@
                 <ul class="jobs__list list">
                     <li class="jobs__item">
                         <a class="jobs__link" href="">
-                            <img class="jobs__image" src="./images/main/our-work-1.jpg" alt="розробник набирає код"
-                                width="370" height="294">
+                            <picture>
+                                <source type="image/webp" srcset="
+                                ./images/main/jobs/jobs-img-1-desktop@1x.webp 1x,
+                                ./images/main/jobs/jobs-img-1-desktop@2x.webp 2x, 
+                                ./images/main/jobs/jobs-img-1-desktop@3x.webp 3x">
+
+                                <source type="image/jpeg" srcset="
+                                ./images/main/jobs/jobs-img-1-desktop@1x.jpg 1x,
+                                ./images/main/jobs/jobs-img-1-desktop@2x.jpg 2x, 
+                                ./images/main/jobs/jobs-img-1-desktop@3x.jpg 3x">
+                                <img class="jobs__image" srcset="" src="./images/main/jobs/jobs-img-1-desktop@1x.jpg"
+                                    alt="розробник набирає код" width="370" height="294">
+                            </picture>
+
                             <div class="jobs__label">
                                 <p class="jobs__text">Десктопні додатки</p>
                             </div>
@@ -178,8 +190,20 @@
 
                     <li class="jobs__item">
                         <a class="jobs__link" href="">
-                            <img class="jobs__image" src="./images/main/our-work-2.jpg"
-                                alt="працівник за комп'ютером з телефоном руці" width="370" height="294">
+                            <picture>
+                                <source type="image/webp" srcset="
+                                ./images/main/jobs/jobs-img-2-desktop@1x.webp 1x,
+                                ./images/main/jobs/jobs-img-2-desktop@2x.webp 2x, 
+                                ./images/main/jobs/jobs-img-2-desktop@3x.webp 3x">
+
+                                <source type="image/jpeg" srcset="
+                                ./images/main/jobs/jobs-img-2-desktop@1x.jpg 1x,
+                                ./images/main/jobs/jobs-img-2-desktop@2x.jpg 2x, 
+                                ./images/main/jobs/jobs-img-2-desktop@3x.jpg 3x">
+
+                                <img class="jobs__image" src="./images/main/jobs/jobs-img-2-desktop@1x.jpg"
+                                    alt="працівник за комп'ютером з телефоном руці" width="370" height="294">
+                            </picture>
                             <div class="jobs__label">
                                 <p class="jobs__text">Мобільні додатки</p>
                             </div>
@@ -188,8 +212,20 @@
 
                     <li class="jobs__item">
                         <a class="jobs__link" href="">
-                            <img class="jobs__image" src="./images/main/our-work-3.jpg"
-                                alt="планшет з відкритою панеллю кольорів" width="370" height="294">
+                            <picture>
+                                <source type="image/webp" srcset="
+                                ./images/main/jobs/jobs-img-3-desktop@1x.webp 1x,
+                                ./images/main/jobs/jobs-img-3-desktop@2x.webp 2x, 
+                                ./images/main/jobs/jobs-img-3-desktop@3x.webp 3x">
+
+                                <source type="image/jpeg" srcset="
+                                ./images/main/jobs/jobs-img-3-desktop@1x.jpg 1x,
+                                ./images/main/jobs/jobs-img-3-desktop@2x.jpg 2x, 
+                                ./images/main/jobs/jobs-img-3-desktop@3x.jpg 3x">
+
+                                <img class="jobs__image" src="./images/main/jobs/jobs-img-3-desktop@1x.jpg"
+                                    alt="планшет з відкритою панеллю кольорів" width="370" height="294">
+                            </picture>
                             <div class="jobs__label">
                                 <p class="jobs__text">Дизайнерські рішення</p>
                             </div>
@@ -205,8 +241,50 @@
                 <ul class="team__list list card-set">
 
                     <li class="teammate">
-                        <img class="teammate__image" src="./images/main/our-team-1.jpg" alt="фотографія працівника"
-                            width="270" height="260">
+                        <picture>
+                            <!-- Desktop screen -->
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/main/team/teammate-4-desktop-270.webp 270w,
+                                ./images/main/team/teammate-4-desktop-540.webp 540w, 
+                                ./images/main/team/teammate-4-desktop-810.webp 810w
+                                " type="image/webp" sizes="270px" />
+
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/main/team/teammate-4-desktop-270.jpg 270w,
+                                ./images/main/team/teammate-4-desktop-540.jpg 540w, 
+                                ./images/main/team/teammate-4-desktop-810.jpg 810w
+                                " type="image/jpeg" sizes="270px" />
+
+                            <!-- Tablet screen -->
+                            <source media="(min-width: 678px)" srcset="
+                                ./images/main/team/teammate-4-tablet-354.webp 354w,
+                                ./images/main/team/teammate-4-tablet-708.webp 708w, 
+                                ./images/main/team/teammate-4-tablet-1062.webp 1062w
+                                " type="image/webp" sizes="354px" />
+
+                            <source media="(min-width: 678px)" srcset="
+                                ./images/main/team/teammate-4-tablet-354.jpg 354w,
+                                ./images/main/team/teammate-4-tablet-708.jpg 708w, 
+                                ./images/main/team/teammate-4-tablet-1062.jpg 1062w
+                                " type="image/jpeg" sizes="354px" />
+
+                            <!-- Mobile screen -->
+                            <source media="(min-width: 480px)" srcset="
+                                ./images/main/team/teammate-4-mobile-450.webp 450w,
+                                ./images/main/team/teammate-4-mobile-900.webp 900w, 
+                                ./images/main/team/teammate-4-mobile-1350.webp 1350w
+                                " type="image/webp" sizes="354px" />
+
+                            <source media="(min-width: 480px)" srcset="
+                                ./images/main/team/teammate-4-mobile-450.jpg 450w,
+                                ./images/main/team/teammate-4-mobile-900.jpg 900w, 
+                                ./images/main/team/teammate-4-mobile-1350.jpg 1350w
+                                " type="image/jpeg" sizes="354px" />
+
+                            <img class="teammate__image" src="./images/main/team/teammate-4-mobile-450.jpg"
+                                alt="фотографія працівника" width="450px" />
+                        </picture>
+
                         <div class="teammate__wrapper">
                             <h3 class="teammate__title">Ігор Дем'яненко</h3>
                             <p class="teammate__descr" lang="en">Product Designer</p>
@@ -244,8 +322,50 @@
                     </li>
 
                     <li class="teammate">
-                        <img class="teammate__image" src="./images/main/our-team-2.jpg" alt="фотографія працівника"
-                            width="270" height="260">
+                        <picture>
+                            <!-- Desktop screen -->
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/main/team/teammate-3-desktop-270.webp 270w,
+                                ./images/main/team/teammate-3-desktop-540.webp 540w, 
+                                ./images/main/team/teammate-3-desktop-810.webp 810w
+                                " type="image/webp" sizes="270px" />
+
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/main/team/teammate-3-desktop-270.jpg 270w,
+                                ./images/main/team/teammate-3-desktop-540.jpg 540w, 
+                                ./images/main/team/teammate-3-desktop-810.jpg 810w
+                                " type="image/jpeg" sizes="270px" />
+
+                            <!-- Tablet screen -->
+                            <source media="(min-width: 678px)" srcset="
+                                ./images/main/team/teammate-3-tablet-354.webp 354w,
+                                ./images/main/team/teammate-3-tablet-708.webp 708w, 
+                                ./images/main/team/teammate-3-tablet-1062.webp 1062w
+                                " type="image/webp" sizes="354px" />
+
+                            <source media="(min-width: 678px)" srcset="
+                                ./images/main/team/teammate-3-tablet-354.jpg 354w,
+                                ./images/main/team/teammate-3-tablet-708.jpg 708w, 
+                                ./images/main/team/teammate-3-tablet-1062.jpg 1062w
+                                " type="image/jpeg" sizes="354px" />
+
+                            <!-- Mobile screen -->
+                            <source media="(min-width: 480px)" srcset="
+                                ./images/main/team/teammate-3-mobile-450.webp 450w,
+                                ./images/main/team/teammate-3-mobile-900.webp 900w, 
+                                ./images/main/team/teammate-3-mobile-1350.webp 1350w
+                                " type="image/webp" sizes="354px" />
+
+                            <source media="(min-width: 480px)" srcset="
+                                ./images/main/team/teammate-3-mobile-450.jpg 450w,
+                                ./images/main/team/teammate-3-mobile-900.jpg 900w, 
+                                ./images/main/team/teammate-3-mobile-1350.jpg 1350w
+                                " type="image/jpeg" sizes="354px" />
+
+                            <img class="teammate__image" src="./images/main/team/teammate-3-mobile-450.jpg"
+                                alt="фотографія працівника" width="450px" />
+                        </picture>
+
                         <div class="teammate__wrapper">
                             <h3 class="teammate__title">Ольга Рєпіна</h3>
                             <p class="teammate__descr" lang="en">Frontend Developer</p>
@@ -283,8 +403,50 @@
                     </li>
 
                     <li class="teammate">
-                        <img class="teammate__image" src="./images/main/our-team-3.jpg" alt="фотографія працівника"
-                            width="270" height="260">
+                        <picture>
+                            <!-- Desktop screen -->
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/main/team/teammate-2-desktop-270.webp 270w,
+                                ./images/main/team/teammate-2-desktop-540.webp 540w, 
+                                ./images/main/team/teammate-2-desktop-810.webp 810w
+                                " type="image/webp" sizes="270px" />
+
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/main/team/teammate-2-desktop-270.jpg 270w,
+                                ./images/main/team/teammate-2-desktop-540.jpg 540w, 
+                                ./images/main/team/teammate-2-desktop-810.jpg 810w
+                                " type="image/jpeg" sizes="270px" />
+
+                            <!-- Tablet screen -->
+                            <source media="(min-width: 678px)" srcset="
+                                ./images/main/team/teammate-2-tablet-354.webp 354w,
+                                ./images/main/team/teammate-2-tablet-708.webp 708w, 
+                                ./images/main/team/teammate-2-tablet-1062.webp 1062w
+                                " type="image/webp" sizes="354px" />
+
+                            <source media="(min-width: 678px)" srcset="
+                                ./images/main/team/teammate-2-tablet-354.jpg 354w,
+                                ./images/main/team/teammate-2-tablet-708.jpg 708w, 
+                                ./images/main/team/teammate-2-tablet-1062.jpg 1062w
+                                " type="image/jpeg" sizes="354px" />
+
+                            <!-- Mobile screen -->
+                            <source media="(min-width: 480px)" srcset="
+                                ./images/main/team/teammate-2-mobile-450.webp 450w,
+                                ./images/main/team/teammate-2-mobile-900.webp 900w, 
+                                ./images/main/team/teammate-2-mobile-1350.webp 1350w
+                                " type="image/webp" sizes="354px" />
+
+                            <source media="(min-width: 480px)" srcset="
+                                ./images/main/team/teammate-2-mobile-450.jpg 450w,
+                                ./images/main/team/teammate-2-mobile-900.jpg 900w, 
+                                ./images/main/team/teammate-2-mobile-1350.jpg 1350w
+                                " type="image/jpeg" sizes="354px" />
+
+                            <img class="teammate__image" src="./images/main/team/teammate-2-mobile-450.jpg"
+                                alt="фотографія працівника" width="450px" />
+                        </picture>
+
                         <div class="teammate__wrapper">
                             <h3 class="teammate__title">Микола Тарасов</h3>
                             <p class="teammate__descr" lang="en">Marketing</p>
@@ -322,8 +484,50 @@
                     </li>
 
                     <li class="teammate">
-                        <img class="teammate__image" src="./images/main/our-team-4.jpg" alt="фотографія працівника"
-                            width="270" height="260">
+                        <picture>
+                            <!-- Desktop screen -->
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/main/team/teammate-1-desktop-270.webp 270w,
+                                ./images/main/team/teammate-1-desktop-540.webp 540w, 
+                                ./images/main/team/teammate-1-desktop-810.webp 810w
+                                " type="image/webp" sizes="270px" />
+
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/main/team/teammate-1-desktop-270.jpg 270w,
+                                ./images/main/team/teammate-1-desktop-540.jpg 540w, 
+                                ./images/main/team/teammate-1-desktop-810.jpg 810w
+                                " type="image/jpeg" sizes="270px" />
+
+                            <!-- Tablet screen -->
+                            <source media="(min-width: 678px)" srcset="
+                                ./images/main/team/teammate-1-tablet-354.webp 354w,
+                                ./images/main/team/teammate-1-tablet-708.webp 708w, 
+                                ./images/main/team/teammate-1-tablet-1062.webp 1062w
+                                " type="image/webp" sizes="354px" />
+
+                            <source media="(min-width: 678px)" srcset="
+                                ./images/main/team/teammate-1-tablet-354.jpg 354w,
+                                ./images/main/team/teammate-1-tablet-708.jpg 708w, 
+                                ./images/main/team/teammate-1-tablet-1062.jpg 1062w
+                                " type="image/jpeg" sizes="354px" />
+
+                            <!-- Mobile screen -->
+                            <source media="(min-width: 480px)" srcset="
+                                ./images/main/team/teammate-1-mobile-450.webp 450w,
+                                ./images/main/team/teammate-1-mobile-900.webp 900w, 
+                                ./images/main/team/teammate-1-mobile-1350.webp 1350w
+                                " type="image/webp" sizes="354px" />
+
+                            <source media="(min-width: 480px)" srcset="
+                                ./images/main/team/teammate-1-mobile-450.jpg 450w,
+                                ./images/main/team/teammate-1-mobile-900.jpg 900w, 
+                                ./images/main/team/teammate-1-mobile-1350.jpg 1350w
+                                " type="image/jpeg" sizes="354px" />
+
+                            <img class="teammate__image" src="./images/main/team/teammate-1-mobile-450.jpg"
+                                alt="фотографія працівника" width="450px" />
+                        </picture>
+
                         <div class="teammate__wrapper">
                             <h3 class="teammate__title">Михайло Єрмаков</h3>
                             <p class="teammate__descr" lang="en">UI Designer</p>

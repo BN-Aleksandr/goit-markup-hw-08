@@ -71,10 +71,7 @@
 }
 
 .portfolio-card__image {
-  display: block;
-
-  max-width: 100%;
-  height: auto;
+  @extend %image;
   margin-right: auto;
   margin-left: auto;
 }
