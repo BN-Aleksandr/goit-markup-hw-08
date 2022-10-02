@@ -4,6 +4,7 @@
 
   @media screen and (min-width: $tablet-width) {
     flex-direction: column;
+    justify-content: space-between;
     gap: 10px;
   }
 
@@ -32,6 +33,11 @@
     font-size: 12px;
     line-height: 14px/12px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 16px/14px;
+  }
 }
 
 .contacts__tel {
@@ -55,10 +61,16 @@
   }
 
   @media screen and (min-width: $tablet-width) {
+    align-items: center;
     margin-bottom: 0;
     font-size: 12px;
     line-height: 14px/12px;
     color: var(--text-color-gray);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 16px/14px;
   }
 }
 

@@ -899,6 +899,9 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 10px;
   }
 }
@@ -933,6 +936,12 @@ p {
     line-height: 14px/12px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__mail {
+    font-size: 14px;
+    line-height: 16px/14px;
+  }
+}
 
 .contacts__tel {
   display: -webkit-box;
@@ -957,10 +966,19 @@ p {
 }
 @media screen and (min-width: 768px) {
   .contacts__tel {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 0;
     font-size: 12px;
     line-height: 14px/12px;
     color: var(--text-color-gray);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__tel {
+    font-size: 14px;
+    line-height: 16px/14px;
   }
 }
 
@@ -1117,6 +1135,11 @@ p {
 
 .address {
   font-style: normal;
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    text-align: start;
+  }
 }
 
 .address__item:not(:last-child) {
@@ -1401,7 +1424,6 @@ p {
 .portfolio-card__thumb {
   position: relative;
   height: auto;
-  outline: 1px dotted darkorchid;
   overflow: hidden;
 }
 
