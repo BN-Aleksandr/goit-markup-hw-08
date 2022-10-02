@@ -623,6 +623,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .footer__adress-group {
+    text-align: start;
     margin-right: 70px;
   }
 }
@@ -630,6 +631,11 @@ p {
 .footer__socials-group {
   width: 206px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__socials-group {
+    text-align: start;
+  }
 }
 
 .footer__socials-text {
@@ -779,6 +785,7 @@ p {
 
 .footer__logo {
   margin-bottom: 20px;
+  text-align: start;
 }
 
 .logo--reverse-color {
@@ -1440,8 +1447,8 @@ p {
   height: 100%;
   background-color: var(--bg-overlay-cl);
   overflow: auto;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform var(--transition-parameters);
   transition: -webkit-transform var(--transition-parameters);
   transition: transform var(--transition-parameters);
